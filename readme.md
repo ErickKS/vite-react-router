@@ -150,7 +150,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 #### 04. Configuring the routing on _App.tsx_
 
 ```js
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function App() {
   return (
@@ -162,6 +162,7 @@ export default function App() {
         {" | "}
         <Link to="/vite-react-router/contact">Contact</Link>
       </nav>
+
       <Outlet />
 
       [FIXED_CONTENT]
